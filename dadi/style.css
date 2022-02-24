@@ -6,14 +6,41 @@
 
 button {
     display: none;
+    margin-bottom: 20px;
 }
 
 .container {
+    width: 70%;
     margin: 0 auto;
     height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.player-die,
+.computer-die {
+    width: 40%;
+    height: 40%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 20px;
+    border: 1px solid black;
+}
+
+.player-die > div,
+.computer-die > div {
+    width: 30%;
+    height: 30%;
+    /* border: 1px solid black; */
+    border-radius: 500px;
+}
+
+.black {
+    background-color: black;
 }
 
 .show {

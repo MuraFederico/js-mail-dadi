@@ -121,27 +121,43 @@ btnStart.addEventListener('click', diceGame);
 // let reset = document.querySelectorAll('.black');
 // console.log(reset)
 
-btnPlayAgain.addEventListener('click', function(){
+// btnPlayAgain.addEventListener('click', function(){
     
-    playerCellA1.classList.remove('black');
-    playerCellA2.classList.remove('black');
-    playerCellA3.classList.remove('black');
-    playerCellB1.classList.remove('black');
-    playerCellB2.classList.remove('black');
-    playerCellB3.classList.remove('black');
-    playerCellC1.classList.remove('black');
-    playerCellC2.classList.remove('black');
-    playerCellC3.classList.remove('black');
-    computerCellA1.classList.remove('black');
-    computerCellA2.classList.remove('black');
-    computerCellA3.classList.remove('black');
-    computerCellB1.classList.remove('black');
-    computerCellB2.classList.remove('black');
-    computerCellB3.classList.remove('black');
-    computerCellC1.classList.remove('black');
-    computerCellC2.classList.remove('black');
-    computerCellC3.classList.remove('black');
+//     playerCellA1.classList.remove('black');
+//     playerCellA2.classList.remove('black');
+//     playerCellA3.classList.remove('black');
+//     playerCellB1.classList.remove('black');
+//     playerCellB2.classList.remove('black');
+//     playerCellB3.classList.remove('black');
+//     playerCellC1.classList.remove('black');
+//     playerCellC2.classList.remove('black');
+//     playerCellC3.classList.remove('black');
+//     computerCellA1.classList.remove('black');
+//     computerCellA2.classList.remove('black');
+//     computerCellA3.classList.remove('black');
+//     computerCellB1.classList.remove('black');
+//     computerCellB2.classList.remove('black');
+//     computerCellB3.classList.remove('black');
+//     computerCellC1.classList.remove('black');
+//     computerCellC2.classList.remove('black');
+//     computerCellC3.classList.remove('black');
 
-    diceGame();
+//     diceGame();
     
-});
+// });
+
+let resetPlayer = document.querySelectorAll('.player-die > div');
+let resetComputer = document.querySelectorAll('.computer-die > div');
+
+btnPlayAgain.addEventListener('click', function(){
+    for (let i = 0; i < resetPlayer.length; i++) {
+        resetPlayer[i].classList.remove('black');
+        
+    }
+    
+    for (let i = 0; i < resetComputer.length; i++) {
+        resetComputer[i].classList.remove('black');
+        
+    }
+    diceGame();
+})

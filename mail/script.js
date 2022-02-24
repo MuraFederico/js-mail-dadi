@@ -11,7 +11,7 @@ for (let i = 0; i < arrayMails.length; i++) {
     
 }
 if (mailRegistered == true) {
-    console.log('la mail esiste');
+    alert('mail trovata');
 } else {
-    console.log('la mail non esiste');
+    alert('mail non esistente');
 }

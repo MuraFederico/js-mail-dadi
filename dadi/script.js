@@ -105,11 +105,11 @@ function diceGame(){
     
     
     if (playerDie > computerDie) {
-        console.log('You win!');
+        alert('You win!');
     }else if (computerDie > playerDie) {
-        console.log('You lose :c') ;  
+        alert('You lose :c') ;  
     } else {
-        console.log('pareggio!');
+        alert('pareggio!');
     }
 
 
@@ -154,7 +154,7 @@ btnPlayAgain.addEventListener('click', function(){
         resetPlayer[i].classList.remove('black');
         
     }
-    
+
     for (let i = 0; i < resetComputer.length; i++) {
         resetComputer[i].classList.remove('black');
         

@@ -118,4 +118,30 @@ function diceGame(){
 
 btnStart.addEventListener('click', diceGame);
 
-btnPlayAgain.addEventListener('click', diceGame);
+// let reset = document.querySelectorAll('.black');
+// console.log(reset)
+
+btnPlayAgain.addEventListener('click', function(){
+    
+    playerCellA1.classList.remove('black');
+    playerCellA2.classList.remove('black');
+    playerCellA3.classList.remove('black');
+    playerCellB1.classList.remove('black');
+    playerCellB2.classList.remove('black');
+    playerCellB3.classList.remove('black');
+    playerCellC1.classList.remove('black');
+    playerCellC2.classList.remove('black');
+    playerCellC3.classList.remove('black');
+    computerCellA1.classList.remove('black');
+    computerCellA2.classList.remove('black');
+    computerCellA3.classList.remove('black');
+    computerCellB1.classList.remove('black');
+    computerCellB2.classList.remove('black');
+    computerCellB3.classList.remove('black');
+    computerCellC1.classList.remove('black');
+    computerCellC2.classList.remove('black');
+    computerCellC3.classList.remove('black');
+
+    diceGame();
+    
+});
